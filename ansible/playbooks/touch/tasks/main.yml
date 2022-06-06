@@ -1,0 +1,14 @@
+---
+  - name: сreate directory and file
+    file:
+      path: /home/Asuka/foo
+      mode: 0666
+      owner: Asuka
+      group: pilots
+      state: directory
+    file:
+      path: /home/Asuka/foo/bar.txt
+      mode: 0666
+      owner: Asuka
+      group: pilots
+      state: touch

@@ -1,0 +1,10 @@
+---
+  - name: Add a group pilots
+    group:
+      name: pilots
+      state: present
+  - name: Add user Asuka with a password
+    user:
+      name: Asuka
+      password: "{{ password | password_hash('sha512') }}"
+      group: pilots

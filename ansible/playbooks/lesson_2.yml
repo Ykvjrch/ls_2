@@ -1,0 +1,6 @@
+---
+- name: Make user, group for user. Make directory and file in directory
+  hosts: ubnt_srv
+  roles:
+    - OS
+    - touch
